@@ -2,27 +2,17 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
+  <meta name="description" content="HGS-Planner: Hierarchical Planning Framework for Active Scene Reconstruction Using 3D Gaussian Splatting.">
+  <meta property="og:title" content="HGS-Planner"/>
+  <meta property="og:description" content="A hierarchical planning framework for fast and high-fidelity active reconstruction using 3D Gaussian Splatting."/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/> <meta property="og:image" content="static/image/your_banner_image.png" /> <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
-
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="twitter:title" content="HGS-Planner: Active Scene Reconstruction">
+  <meta name="twitter:description" content="Explore HGS-Planner, a novel framework for active scene reconstruction using 3D Gaussian Splatting.">
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png"> <meta name="twitter:card" content="summary_large_image">
+  <meta name="keywords" content="3D Gaussian Splatting, Active Reconstruction, Robotics, Hierarchical Planning, Scene Understanding">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
 
   <title>HGS-Planner</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
@@ -35,9 +25,7 @@
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
   <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="static/css/index.css"> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
   <script src="static/js/bulma-carousel.min.js"></script>
@@ -45,7 +33,6 @@
   <script src="static/js/index.js"></script>
 </head>
 <body>
-
 
   <section class="hero">
     <div class="hero-body">
@@ -55,211 +42,146 @@
             <h1 class="title is-1 publication-title">HGS-Planner: Hierarchical Planning Framework for Active Scene
 Reconstruction Using 3D Gaussian Splatting</h1>
             <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
               <span class="author-block">
-              <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">
-                Zijun Xu<sup>1</sup></a>,</span>
-              
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">
+                  Zijun Xu<sup>1</sup></a>,</span>
               <span class="author-block">
                 <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">
                   Rui Jin<sup>2</sup></a>,</span>
-              
               <span class="author-block"><a href="THIRD AUTHOR PERSONAL LINK" target="_blank">
                 Ke Wu<sup>1</sup></a>,</span>
-              
               <span class="author-block"><a href="THIRD AUTHOR PERSONAL LINK" target="_blank">
                 Yi Zhao<sup>1</sup></a>,</span>
-              
               <span class="author-block"><a href="THIRD AUTHOR PERSONAL LINK" target="_blank">
                 Zhiwei Zhang<sup>1</sup></a>,</span>
-              
               <span class="author-block"><a href="THIRD AUTHOR PERSONAL LINK" target="_blank">
                 Jieru Zhao<sup>3</sup></a>,</span>
-              
               <span class="author-block"><a href="THIRD AUTHOR PERSONAL LINK" target="_blank">
                 Fei Gao<sup>2</sup></a>,</span>
-              
               <span class="author-block"><a href="THIRD AUTHOR PERSONAL LINK" target="_blank">
                 Zhongxue Gan *<sup>1</sup></a>,</span>
-              
               <span class="author-block"><a href="THIRD AUTHOR PERSONAL LINK" target="_blank">
                 Wenchao Ding *<sup>1</sup></a></span>
-          </div>
+            </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block"><sup>1</sup>Fudan University</span>
-                    <br>
-                    <span class="author-block"><sup>2</sup>Zhejiang University</span>
-                     <br>
-                    <span class="author-block"><sup>3</sup>Shanghai Jiao Tong University</span>
-                     <br>
-                    ICRA 2025
-<!--                 <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
-                  </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Fudan University</span>
+              <br>
+              <span class="author-block"><sup>2</sup>Zhejiang University</span>
+              <br>
+              <span class="author-block"><sup>3</sup>Shanghai Jiao Tong University</span>
+              <br>
+              ICRA 2025
+            </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/2409.17624" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- Supplementary PDF link -->
-<!--                     <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span> -->
-        
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-<!--                 <!-- ArXiv abstract Link -->
-<!--                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/2409.17624" target="_blank"
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2409.17624" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                    <i class="ai ai-arxiv"></i>
+                    <i class="fas fa-file-pdf"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>Paper</span>
                 </a>
-              </span> -->
-            </div>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/YOUR REPO HERE" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>Code</span>
+              </a>
+            </span>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/teaser_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-       In a simulated complex house scene, we implemented our high-fidelity active reconstruction system on a mobile robot equipped with an RGB-D sensor. The colored curves represent the robot’s executed trajectories. We showcase the reconstruction results, which include the entire rendered scene, detailed renderings from three different views, and the variation in information gain at a specific view.
-      </h2>
-    </div>
-  </div>
-</section>
-
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<!-- Paper abstract -->
-<!-- <section class="section" style="margin-top: -2rem;"> -->
-  <section class="hero teaser">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-
-          In complex missions such as search and rescue,robots must make intelligent decisions in unknown environments, relying on their ability to perceive and understandtheir surroundings.
-          High-quality and real-time reconstruction enhances situational awareness and is crucial for intelligent robotics. 
-          Traditional methods often struggle with poor scene representation or are too slow for real-time use.
-          Inspired by the efficacy of 3D Gaussian Splatting (3DGS), we propose a hierarchical planning framework for fast and high-fidelity active reconstruction. 
-          Our method evaluates completion and quality gain to adaptively guide reconstruction, integrating global and local planning for efficiency.
-          Experiments in simulated and real-world environments show our approach outperforms existing real-time methods.
-
-        </div>
-      </div>
-    </div>
-<!-- End paper abstract -->
-
-<!-- Pipeline -->
-<div class="columns is-centered has-text-centered">
-  <div class="column is-full-width">
-  <h2 class="title is-3">Framework</h2>
-    <img src="./static/images/图片1.png"
-        class="interpolation-image"
-        alt="System Architecture Pipeline."/>
-    <div class="content has-text-justified">
-
-    An overview of our efficient autonomous reconstruction system with high-fidelity.
-    Utilizing 3DGS for scene representation, the unobserved areas and the Fisher Information from the GS map are provided in real-time to evaluate the quality and completeness of the online reconstruction. 
-    Our proposed active reconstruction planning framework efficiently guides the robot to acquire new scene data, ensuring a comprehensive and high-fidelity 3DGS reconstruction.
-
     </div>
   </div>
 </div>
 </section>
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="60%">
-            <source src="./static/videos/ICRA25_VIDEO.mp4"
-                    type="video/mp4">
+
+<section class="hero teaser"> <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop style="width: 100%; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"> <source src="static/videos/teaser_video.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered" style="margin-top: 1.5rem;"> In a simulated complex house scene, we implemented our high-fidelity active reconstruction system on a mobile robot equipped with an RGB-D sensor. The colored curves represent the robot’s executed trajectories. We showcase the reconstruction results, which include the entire rendered scene, detailed renderings from three different views, and the variation in information gain at a specific view.
+      </h2>
+    </div>
+  </div>
+</section>
+<section class="section"> <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 has-text-centered">Abstract</h2> <div class="content has-text-justified" style="font-size: 1.1rem; line-height: 1.6;"> In complex missions such as search and rescue,robots must make intelligent decisions in unknown environments, relying on their ability to perceive and understandtheir surroundings.
+          High-quality and real-time reconstruction enhances situational awareness and is crucial for intelligent robotics.
+          Traditional methods often struggle with poor scene representation or are too slow for real-time use.
+          Inspired by the efficacy of 3D Gaussian Splatting (3DGS), we propose a hierarchical planning framework for fast and high-fidelity active reconstruction.
+          Our method evaluates completion and quality gain to adaptively guide reconstruction, integrating global and local planning for efficiency.
+          Experiments in simulated and real-world environments show our approach outperforms existing real-time methods.
         </div>
       </div>
     </div>
-<!--BibTex citation -->
+  </div>
+</section>
+<section class="section"> <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width has-text-centered"> <h2 class="title is-3">Framework</h2>
+        <figure class="image is-inline-block" style="margin-bottom: 1.5rem;"> <img src="./static/images/图片1.png"
+             class="interpolation-image"
+             alt="System Architecture Pipeline of HGS-Planner." style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); max-width: 800px; display: block; margin-left:auto; margin-right:auto;"/> </figure>
+        <div class="content has-text-justified" style="max-width: 800px; margin: 0 auto; font-size: 1.05rem; line-height: 1.6;"> An overview of our efficient autonomous reconstruction system with high-fidelity.
+          Utilizing 3DGS for scene representation, the unobserved areas and the Fisher Information from the GS map are provided in real-time to evaluate the quality and completeness of the online reconstruction.
+          Our proposed active reconstruction planning framework efficiently guides the robot to acquire new scene data, ensuring a comprehensive and high-fidelity 3DGS reconstruction.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section"> <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths has-text-centered"> <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <video id="replay-video"
+          controls
+          muted
+          preload
+          playsinline
+          style="width: 100%; max-width: 800px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"> <source src="./static/videos/ICRA25_VIDEO.mp4"
+          type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
 <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>@article{xu2024hgs,
+  <div class="container is-max-desktop content">
+    <h2 class="title has-text-centered">BibTeX</h2> <pre style="background-color: #f5f5f5; border: 1px solid #ddd; border-radius: 6px; padding: 1.25em 1.5em; box-shadow: 0 2px 6px rgba(0,0,0,0.05); white-space: pre-wrap; word-wrap: break-word;"><code>@article{xu2024hgs,
   title={Hgs-planner: Hierarchical planning framework for active scene reconstruction using 3d gaussian splatting},
   author={Xu, Zijun and Jin, Rui and Wu, Ke and Zhao, Yi and Zhang, Zhiwei and Zhao, Jieru and Gao, Fei and Gan, Zhongxue and Ding, Wenchao},
   journal={arXiv preprint arXiv:2409.17624},
   year={2024}
 }</code></pre>
-    </div>
+  </div>
 </section>
-<!--End BibTex citation -->
-
-
-  <footer class="footer">
+<footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+          <p class="has-text-centered"> This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
             You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
-
         </div>
       </div>
     </div>
   </div>
 </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+</body>
+</html>
