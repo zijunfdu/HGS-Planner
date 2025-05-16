@@ -191,23 +191,12 @@ Reconstruction Using 3D Gaussian Splatting</h1>
 <div class="columns is-centered has-text-centered">
   <div class="column is-full-width">
   <h2 class="title is-3">Framework</h2>
-    <img src="./static/images/pip_pip.png"
+    <img src="./static/images/图片1.png"
         class="interpolation-image"
         alt="System Architecture Pipeline."/>
     <div class="content has-text-justified">
-      <p>
-      Illustration of the comprehensive pipeline of our proposed framework for dynamic scene reconstruction and parallel scenario simulation. 
-      The diagram consists of three main components: 
-      </p>
-      <p>
-      (1) Scene Reconstruction Module, which takes multimodal inputs including LiDAR point clouds, camera images to generate a decomposed 3D Gaussian representation of the environment, separating static backgrounds, dynamic agents, and sky regions; 
-      </p>
-      <p>
-      (2) Trajectory Prediction Module, which utilizes historical agent trajectories and HD map priors to generate multiple plausible future trajectories for each agent;
-      </p>
-      <p>
-      (3) Parallel Scenario Simulation, where predicted trajectories are integrated into the reconstructed 3D scene to synthesize photorealistic video sequences of diverse future scenarios.
-      </p>
+    An overview of our efficient autonomous reconstruction system with high-fidelity.
+    Utilizing 3DGS for scene representation, the unobserved areas and the Fisher Information from the GS map are provided in real-time to evaluate the quality and completeness of the online reconstruction. Our proposed active reconstruction planning framework efficiently guides the robot to acquire new scene data, ensuring a comprehensive and high-fidelity 3DGS reconstruction.
     </div>
   </div>
 </div>
