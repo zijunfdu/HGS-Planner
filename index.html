@@ -169,7 +169,57 @@ Reconstruction Using 3D Gaussian Splatting</h1>
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
-<section class="section hero is-light">
+<!-- Paper abstract -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+          Autonomous driving simulation is critical for closed-loop validation of autonomous driving systems. 
+          In recent years, the development of NeRF and 3DGS technologies has enabled high-fidelity reconstruction and novel view synthesis, making it possible to bridge the sim2real gap in terms of image realism. 
+          This study presents a compact framework integrating scene-separated 3DGS reconstruction with trajectory prediction models.
+          BehaviorGaussian explicitly models dynamic object interactions to forecast agent trajectories, which are then unified with reconstructed environments for multi-scenario 3D world simulation. 
+          The 3DGS rendering pipeline concurrently generates visualizations of these parallel scenarios through temporally coherent video sequences. 
+          Experimental validation on the Waymo dataset confirms our framework's capability to simulate 3D parallel environments effectively, enhancing both simulation authenticity and functional versatility for autonomous driving system development.
+          </p>
+        </div>
+      </div>
+    </div>
+<!-- End paper abstract -->
+
+<!-- Pipeline -->
+<div class="columns is-centered has-text-centered">
+  <div class="column is-full-width">
+  <h2 class="title is-3">Framework</h2>
+    <img src="./static/images/pip_pip.png"
+        class="interpolation-image"
+        alt="System Architecture Pipeline."/>
+    <div class="content has-text-justified">
+      <p>
+      Illustration of the comprehensive pipeline of our proposed framework for dynamic scene reconstruction and parallel scenario simulation. 
+      The diagram consists of three main components: 
+      </p>
+      <p>
+      (1) Scene Reconstruction Module, which takes multimodal inputs including LiDAR point clouds, camera images to generate a decomposed 3D Gaussian representation of the environment, separating static backgrounds, dynamic agents, and sky regions; 
+      </p>
+      <p>
+      (2) Trajectory Prediction Module, which utilizes historical agent trajectories and HD map priors to generate multiple plausible future trajectories for each agent;
+      </p>
+      <p>
+      (3) Parallel Scenario Simulation, where predicted trajectories are integrated into the reconstructed 3D scene to synthesize photorealistic video sequences of diverse future scenarios.
+      </p>
+    </div>
+  </div>
+</div>
+<!-- End pipeline -->
+
+
+
+
+
+
+  
+<!-- <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -222,7 +272,7 @@ Reconstruction Using 3D Gaussian Splatting</h1>
   </div>
 </div>
 </div>
-</section>
+</section> -->
 <!-- End image carousel -->
 
 
