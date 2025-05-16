@@ -51,44 +51,51 @@ body {
     font-family: 'Google Sans', sans-serif;
 }
 
+/* Author list styling */
 .publication-authors {
-    font-family: 'Google Sans', sans-serif;
-}
-
-.publication-venue {
-    color: #555;
-    width: fit-content;
-    font-weight: bold;
-}
-
-.publication-awards {
-    color: #ff3860;
-    width: fit-content;
-    font-weight: bolder;
-}
-
-.publication-authors {
-}
-
-.publication-authors a {
-   color: hsl(204, 86%, 53%) !important;
-}
-
-.publication-authors a:hover {
-    text-decoration: underline;
+  display: flex; /* Enable Flexbox for the container */
+  flex-wrap: wrap; /* Allow author blocks to wrap to the next line */
+  justify-content: center; /* Center the lines of authors horizontally */
+  align-items: center; /* Align items vertically if they have different heights (e.g. due to descenders) */
+  line-height: 1.8; /* Adjust line height for better readability and space for superscripts */
+  margin-bottom: 1rem; /* Space below the author list before the affiliations */
+  /* is-size-5 class from Bulma will handle the base font size */
 }
 
 .author-block {
-  display: inline-block;
+  margin-right: 0.4em; /* Space after each author block (accounts for the comma) */
+  margin-bottom: 0.3em; /* Vertical space between lines if authors wrap */
+  white-space: nowrap; /* Prevent a single author's name and sup from breaking across lines */
 }
 
-.publication-banner img {
+/* Remove margin from the very last author block since it doesn't have a trailing comma */
+.author-block:last-child {
+  margin-right: 0;
 }
 
-.publication-authors {
-  /*color: #4286f4;*/
+.author-block a {
+  /* color: #3273dc; */ /* Optional: Bulma's default link color, or inherit */
+  color: inherit; /* Inherits text color from .publication-authors */
+  text-decoration: none; /* No underline by default */
 }
 
+.author-block a:hover {
+  text-decoration: underline; /* Underline on hover for visual feedback */
+  /* color: #363636; */ /* Optional: Change hover color if desired */
+}
+
+.author-block sup {
+  font-size: 0.75em; /* Make superscript slightly smaller than main text */
+  position: relative; /* Necessary for 'top' positioning to work */
+  top: -0.5em; /* Adjust vertical alignment of the superscript */
+  margin-left: 0.05em; /* Slight space between the name and the superscript */
+  font-weight: normal; /* Ensure superscript isn't unintentionally bolded if author name is bold */
+}
+
+/* Styling for the asterisk indicating corresponding authors */
+.author-block sup:before { /* If the asterisk is part of the sup */
+    /* content: '*'; */ /* Example if you wanted to add it via CSS, but it's in your HTML */
+}
 .publication-video {
     position: relative;
     width: 100%;
